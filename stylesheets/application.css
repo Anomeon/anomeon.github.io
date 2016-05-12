@@ -2057,4 +2057,5 @@ body {
     display: block; }
     /* line 176, application.css.sass */
     .media-object-section:first-child {
-      padding-right: 0; } }
+      padding-right: 0;
+      margin-bottom: 28px; } }
