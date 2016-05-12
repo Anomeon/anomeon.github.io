@@ -1912,14 +1912,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 48, application.css.sass */
+    body {
+      padding-top: 16px; } }
 
-/* line 58, application.css.sass */
+/* line 61, application.css.sass */
 .welcome__title {
   margin-bottom: 25px;
   font-size: 1rem;
   color: #ffffff; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 61, application.css.sass */
+    .welcome__title {
+      margin-bottom: 16px; } }
 
-/* line 64, application.css.sass */
+/* line 70, application.css.sass */
 .button {
   display: inline-block;
   border: 1px solid #ffffff;
@@ -1927,29 +1935,51 @@ body {
   color: #ffffff;
   padding: 10px 24px 10px 16px;
   transition: all 0.3s ease; }
-  /* line 71, application.css.sass */
+  /* line 77, application.css.sass */
   .button:hover, .button:focus {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2); }
 
-/* line 77, application.css.sass */
+/* line 83, application.css.sass */
 .button-vk {
   margin-bottom: 50px; }
-  /* line 80, application.css.sass */
+  /* line 86, application.css.sass */
   .button-vk span {
     display: inline-block;
     margin-left: 24px;
     vertical-align: middle; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 83, application.css.sass */
+    .button-vk {
+      margin-bottom: 16px; } }
 
-/* line 86, application.css.sass */
+/* line 95, application.css.sass */
 .contacts {
   position: relative; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 98, application.css.sass */
+    .contacts > img {
+      width: 240px; } }
 
-/* line 89, application.css.sass */
+/* line 101, application.css.sass */
+.position {
+  position: absolute;
+  top: 90px;
+  font-size: 0.875rem;
+  left: 0;
+  right: 0;
+  color: #ffffff; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 101, application.css.sass */
+    .position {
+      font-size: 0.75rem;
+      top: 74px; } }
+
+/* line 112, application.css.sass */
 .phone {
   display: block;
   position: absolute;
-  top: 120px;
+  top: 136px;
   text-align: center;
   left: 0;
   right: 0;
@@ -1957,27 +1987,46 @@ body {
   font-size: 1.25rem;
   letter-spacing: 1px;
   transition: all 0.3s ease; }
-  /* line 100, application.css.sass */
+  /* line 123, application.css.sass */
   .phone:hover, .phone:focus {
     color: rgba(255, 255, 255, 0.7); }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 112, application.css.sass */
+    .phone {
+      top: 108px; } }
 
-/* line 104, application.css.sass */
+/* line 129, application.css.sass */
 .vk {
   position: absolute;
   bottom: -28px;
   left: 80px; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 129, application.css.sass */
+    .vk {
+      left: 60px; } }
 
-/* line 109, application.css.sass */
+/* line 136, application.css.sass */
 .mail {
   position: absolute;
   bottom: -28px;
   right: 80px; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 136, application.css.sass */
+    .mail {
+      right: 60px; } }
 
-/* line 114, application.css.sass */
+/* line 143, application.css.sass */
 .qr {
   position: relative; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 143, application.css.sass */
+    .qr {
+      display: none; }
+      /* line 147, application.css.sass */
+      .qr img {
+        width: 80%; } }
 
-/* line 117, application.css.sass */
+/* line 150, application.css.sass */
 .qr__title {
   position: absolute;
   bottom: 0;
@@ -1991,11 +2040,24 @@ body {
   text-transform: uppercase;
   color: #ffffff; }
 
-/* line 131, application.css.sass */
+/* line 164, application.css.sass */
 .logo {
   margin-bottom: 56px; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 164, application.css.sass */
+    .logo {
+      margin-bottom: 16px; } }
 
-/* line 135, application.css.sass */
+/* line 171, application.css.sass */
 .media-object--centered {
   display: inline-block;
   margin: 0 auto; }
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  /* line 176, application.css.sass */
+  .media-object-section {
+    display: block; }
+    /* line 178, application.css.sass */
+    .media-object-section:first-child {
+      padding-right: 0;
+      margin-bottom: 48px; } }
