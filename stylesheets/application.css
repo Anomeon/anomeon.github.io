@@ -2039,23 +2039,64 @@ body {
   color: #ffffff; }
 
 /* line 162, application.css.sass */
-.logo {
-  margin-bottom: 56px; }
-  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-    /* line 162, application.css.sass */
-    .logo {
-      margin-bottom: 16px; } }
-
-/* line 169, application.css.sass */
 .media-object--centered {
   display: inline-block;
   margin: 0 auto; }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 174, application.css.sass */
+  /* line 167, application.css.sass */
   .media-object-section {
     display: block; }
-    /* line 176, application.css.sass */
+    /* line 169, application.css.sass */
     .media-object-section:first-child {
       padding-right: 0;
       margin-bottom: 28px; } }
+/* line 174, application.css.sass */
+.logo {
+  position: relative;
+  width: 38px;
+  height: 64px;
+  margin-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    /* line 174, application.css.sass */
+    .logo {
+      margin-bottom: 16px; } }
+
+/* line 186, application.css.sass */
+.holder {
+  position: absolute;
+  width: 38px;
+  height: 64px;
+  transform: translateZ(0px);
+  background-image: url("/images/A2.svg");
+  background-color: transparent;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat; }
+
+/* line 197, application.css.sass */
+.pendulum {
+  position: absolute;
+  left: -6px;
+  top: 0px;
+  width: 50px;
+  height: 50.59587px;
+  transform: translateZ(0px) rotate(-45deg);
+  transform-origin: 50% 100% 0px;
+  background-image: url("/images/Pasted.svg");
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  animation-name: metronom;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out; }
+
+@keyframes metronom {
+  from {
+    transform: rotate(-45deg); }
+  to {
+    transform: rotate(45deg); } }
