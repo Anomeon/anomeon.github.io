@@ -1,49 +1,79 @@
 <!DOCTYPE html>
-<html class='no-js' lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta content='ie=edge' http-equiv='x-ua-compatible'>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <title>Artigasband</title>
-    <link href="/stylesheets/application.css" rel="stylesheet" />
-  </head>
-  <body class='index'>
-    <div class='wrapper'>
-      <header>
-        <div class='logo'>
-          <div class='holder'></div>
-          <div class='pendulum'></div>
-        </div>
-        <h1 class='welcome__title'>
-          Сайт находится в разработке. Основная информация в группе:
-        </h1>
-        <a class='button button-vk' href='http://vk.com/artigasband' target='_blank'><img src="/images/vk.svg" alt="Vk" /><span>vk.com/artigasband</span></a>
-      </header>
-      <section>
-        <div class='media-object media-object--centered'>
-          <div class='media-object-section middle'>
-            <div class='contacts'>
-              <img src="/images/contacts.svg" alt="Contacts" />
-              <a href="tel:+79869176716" class="phone">+7 (986) 917 67 16</a>
-              <a href="http://vk.com/idarthurartigas" class="vk" target="_blank"><img src="/images/vk-round.svg" alt="Vk round" />
-            </a>
-              <a href="mailto:arthurartigas@mail.ru" class="mail"><img src="/images/mail-round.svg" alt="Mail round" />
-            </a>
-              <div class='position'>
-                художественный руководитель
-              </div>
-            </div>
-          </div>
-          <div class='media-object-section middle'>
-            <div class='qr'>
-              <img src="/images/qr.svg" alt="Qr" />
-              <h3 class='qr__title'>
-                Отсканируйте и добавьте в контакты
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, Times;
+      margin: 0;
+    }
+
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr 100px 30vh;
+    }
+
+    .count {
+      width: 100%;
+      background-color: tomato;
+      border: none;
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .reset {
+      width: 100%;
+      background-color: #bbb;
+      border: none;
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .bpm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bpm__label {
+      font-size: 20px;
+    }
+
+    .bpm__value {
+      font-size: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bpm">
+      <span class="bpm__label">BPM</span>
+      <span class="bpm__value">0</span>
     </div>
-  </body>
+    <button class="reset">Reset</button>
+    <button class="count">Tap</button>
+  </div>
+  <script>
+    const button = document.querySelector('.count');
+    const bpmValue = document.querySelector('.bpm__value');
+    let count = 0;
+    let start = Date.now();
+    button.addEventListener('click', () => {
+      const now = Date.now();
+      count += 1;
+      bpmValue.textContent = Math.ceil(60 * count / ((now - start) / 1000));
+    });
+    const resetButton = document.querySelector('reset');
+    resetButton.addEventListener('click', () => {
+      count = 0;
+      start = Date.now();
+    });
+  </script>
+</body>
 </html>
